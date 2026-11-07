@@ -3,14 +3,17 @@
 
 int main() {
 
-	for (int i = 0; i < 10; i = i + 1) {
-		for (int j = 0; i < 10; i = i + 1) {
+	int x = 0;
+	int y = 0;
+
+	for(x = 0; x < 4; x = x + 1) {
+		for (y = 0; y < 3; y = y + 1) {
 			printf("Hello World\n");
-		int *ma = &i;
-		int *mb = &j;
+		}
+	}	
+		int *ma = &x;
+		int *mb = &y;
 			printf("Memory address x axis = %p \n", ma);
 			printf("Memory address Y axis = %p \n", mb); 
-		}
-	}
 return 0;
 }	
