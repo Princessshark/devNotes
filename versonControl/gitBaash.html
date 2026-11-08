@@ -1,0 +1,152 @@
+<html>
+<head>
+	<title>Git Documentation</title>
+	<style>
+		body{		
+			text-align: center;
+			background-color: grey;
+		}
+	</style>
+
+</head>
+<body>
+<div>
+	<h1>Basic Git Commands!</h1>
+	<br>
+	<hr>
+	<p>use the following command to see <b>instruction manual</b></p>
+	<h2>git help</h2>
+	<p><b>specific help</b> for commands <b>EXAMPLE</b> init</p>
+	<h2>git help init</h2>
+	<br>
+	<p>use the following command to <b>check your existing configuration</b></p>
+	<h2>git config --list</h2>
+	<br>
+	<p> use such following commands to <b>specific existing configuration</b></p>
+	<h2>git config user.name</h2>
+	<h2>git config user.email</h2>
+	<br>
+	<hr>
+	<br>
+	<h4>Start by configuring your git account</h4>
+	<p>use the following commands to <b>configure your git account</b></p>
+	<h2>git config --global user.name "Jhon Doe"</h2>
+	<br>
+	<h2>git config --global user.email "doejhon@yahoo.com"</h2>
+	<br>
+	<hr>
+	<br>
+	<h4>Create a New git Project</h4>
+	<p>use the followin command to <b>initailze an empty git reposotary</b></p>
+	<h2>git init</h2>
+	<br>
+	<hr>
+	<br>
+	<h4>Project status</h4>
+	<p>use the following command to <b>check the status</b> of file and directories</p>
+	<h2>git status</h2>
+	<p style="color: red;">Untracked FIles</p><p style="color: green;">Added in Staging Area</p>	
+	<br>
+	<hr>
+	<br>
+	<h4>Prior to a commit, we need to add the files or directory in a staging area</h4>	
+	<p>use the following command to <b>add all</b> the files or directory to the staging area</p>
+	<h2>git add .</h2>
+	<br>
+	<p>use the following command to <b>remove</b> files or directories from the staging area</p>
+	<h2>git restore --staged "fileName.fileType"</h2>
+	<br>
+	<p>use the following command to <b>add</b> files or directory from a <b>designate PATH</b></p>
+	<h2>git add PATH/fileName.fileExtention</h2>
+	<br>
+	<hr>
+	<br>
+	<h4 style="color: green;" >To Commit with a bookmark</h4>
+	<p>use the following command, <b>after adding</b> the changes into the staging area</p>
+	<h2>git commit -m "my message"</h2>
+	<br>
+	<hr>
+	<br>
+	<h4>Access the history of all your commints</h4>
+	<p>use the following command to <b>access</b> the entire <b>log of your commits</b></p>
+	<h2>git log</h2>
+	<br>
+	<hr>
+	<br>
+	<h4>Restore or updates</h4>
+	<p>use the following commands with</p> 
+	<p>use the following flag <b> --hard</b> to restore even the files</p>
+	<br>
+	<p><b>Rewind back to state before the last Merge</b> </p>
+	<h2>git reset --hard ORIG_HEAD</h2>
+	<br>
+	<p><b>Rewind back to reffered to Commit</b> </p>
+	<h2>git	reset 'commitHash'</h2>
+	<br>
+	<p><b>Restore deleted</b> files or directory <b>OLD METHOD</b></p>
+	<h2>git checkout HEAD ./PATH</h2> 
+	<br>
+	<p>Restore deleted files or directory <b>NEW METHOD</b></p>
+	<h2>git restore ./PATH</h2>
+	<hr>
+	<br>
+
+	<h4>Store files or directories on the background withought updating the log</h4>
+	<p>use the following command <b> with git add command, as the selector</b></p>
+	<h2>git stash</h2>
+	<br>
+	<h4>Retrive files or directories from the background location</h4>
+	<p>use the following command <b>retrive stash data</b> from the background</p>
+	<h2>git stash pop</h2>
+	<br>
+	<h4>Permanently clear files or directories from the background location</h4>	
+	<p>use the following command<b> remove from stash</b></p>
+	<h2>git stash clear</h2>
+	<br>
+	<hr>
+	<br>
+	<h1>Avoid Editing Master Branch</h1>
+	<p>use the following command to <b>create a new branch</b></p>
+	<h2>git branch Branch_NAME</h2>
+	<br>
+	<h4>HEAD -> BRANCH_NAME</h4>
+	<p>use the following command to <b>point the header on a particular branch</b></p>
+	<h2>git checkout Branch_NAME</h2>
+	<br>
+	<br>
+	<hr>
+	<h2>Merge Request</h2>
+	<p>use the following command to <b>mestioned branch to the MASTER branch</b></p>
+	<h2>git merge Branch_NAME</h2>
+	<br>
+	<hr>
+	<h2>Pull Request</h2>
+	<p>use the following command to <b></b></p>
+	<h2>git clone reposotoryURL</h2>
+	<br>
+	<hr>
+	<h2>Push Request</h2>
+	<p>use the following command to <b></b></p>
+	<h2>git push origin BRANCH_NAME</h2>
+	<br>
+	<hr>
+	<h2>Fetch</h2>
+	<p>use the following command to <b></b></p>
+	<h2></h2>
+	<br>
+	<hr>
+	<h1>Github</h1>
+	<p>Create a github account</p>
+		<b>create a new reposotary copy the reposotoryURL</b></p>
+	<h2>git remote add origin <a href="#">https://reposotoryURL</a> </h2>
+	<br>
+	<h2>View URL's attached to a reposotary</h2>
+	<p>use the following command to <b></b></p>
+	<h2>git remote -v</h2>
+	<br>
+	<hr>
+
+</div>
+</body>
+</html>
+

@@ -1,0 +1,95 @@
+<html>
+	<head><title>Docker Documentation</title></head>
+	<style>
+		body{		
+			text-align: center;
+			background-color: grey;
+		}
+	</style>
+</head>
+<body>
+		<h1>Basic Docker command!</h1>
+		<br>
+		<hr>
+		<h4>Instalation</h4>
+		<p>Follow the official website documenation for installation of docker, as per your evniroment</p>
+		<a href="https://docs.google.com/document/d/1ctz9sEwn4PN3D-_HD3yWKXFuqs1Z4F0aQ569_eHz-Eg/edit?usp=drivesdk"><b>Resources</b></a>
+		<br>
+		<br>
+		<p><b>confirm</b> your docker <b>installation</b></p>
+		<h3>docker run hello-world</h3>
+		<br>
+		<hr>
+		<br>
+		<h4>Downloading  only</h4>
+		<p>use the following commands to <b>download the images</b> EXAMPLE</p>
+		<h3>docker pull debian</h3>
+		<p>docker pull redhat/ubi8</p>
+		<p>docker pull ubuntu</p>
+		<br>
+		<hr>
+		<br>
+		<h4>Initalinze a container image</h4>
+		<p>use the following command to <b>run an interactive environment</b> EXAMPLE</p>
+		<h3>docker run -it debian</h3>
+		<br>
+		<h4>Start container image</h4>
+		<p>use the following command to <b>start an particular interactive environment</b></p>
+		<h3>docker start CONTAINER ID</h3>
+		<br>
+		<h4>Restart container image</h4>
+		<p>use the following command to <b>Restart an particular interactive environment</b></p>
+		<h3>docker restart CONTAINER ID</h3>
+		<br>
+		<h4>Terminate a container image</h4>
+		<p>user the following command to <b>terminate the interactive environment</b></p>
+		<h3>docker stop CONTAINER ID</h3>
+		<hr>
+		<br>
+		<p>use the following command to <b>Check running processes</b></p>
+		<h3>docker ps</h3>
+		<br>
+		<p>use the following command to lists<b> all the containers</b></p>
+		<h3>docker container ls -a</h3>
+		<br>
+		<hr>
+		<br>
+		<h4>List docker Images</h4>
+		<p>use the following command to <b>Check for locally available docker images</b></p>
+		<h3>docker images</h3>
+		<br>
+		<hr>
+		<br>
+		<h4>Executes into a interactive shell environment</h4>
+		<p>use the following command on a <b>running container</b>EXAMPLE</p>
+		<h3>docker container exec -it f13bc3618719 bash</h3>
+		<br>
+		<h4>Reopen according to CONTAINER ID</h4>
+		<p>use the following command on a <b>running container</b>EXAMPLE</p>
+		<h3>docker start -ai CONTAINER ID</h3>
+		<br>
+		<hr>
+		<br>
+		<h4>Check container properties</h4>
+		<p>use the following command to <b>inspect assigned container</b></p>
+		<h5>INFO ==  debian or CONTAINER ID </h5>
+		<h3>docker inspect INFO</h3>
+		<br>
+		<hr>
+		<h4>Logs access</h4>
+		<p>use the following command to <b>list the containerization logs</b></P>
+		<h3>docker ps -a</h3>
+		<br>
+		<p>use the following command to <b>list the selected image log</b></p>
+		<h3>docker logs CONTAINER ID</h3>
+		<br>
+		<hr>
+		<br>
+		<h4>Clean up<h4>
+		<p>use the following command to clean you images</p>
+		<p>All</p>
+		<h3>docker container prune -f</h3>
+		<br>
+	</body>
+</html>
+
